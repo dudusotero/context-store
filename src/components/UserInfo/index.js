@@ -1,4 +1,4 @@
-import UserInfo from './UserInfo'
+import UserInfo from './component'
 import * as actions from './actions'
 import middleware from './middleware'
 import reducer, { initialState } from './reducer'

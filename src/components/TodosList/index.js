@@ -1,4 +1,4 @@
-import TodosList from './TodosList'
+import TodosList from './component'
 import * as actions from './actions'
 import middleware from './middleware'
 import reducer, { initialState } from './reducer'

@@ -1,5 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
+import React, { Fragment } from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'))
+import { ContextProvider } from "./store";
+import { UserInfo, TodosList } from "./components";
+
+const App = () => (
+  <ContextProvider>
+    <Fragment>
+      <UserInfo />
+      <TodosList />
+    </Fragment>
+  </ContextProvider>
+);
+
+ReactDOM.render(<App />, document.getElementById("root"));
