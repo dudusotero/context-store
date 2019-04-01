@@ -1,2 +1,5 @@
+export { default as Home } from './Home'
+export { default as SignUp } from './SignUp'
 export { default as TodosList } from './TodosList'
 export { default as UserInfo } from './UserInfo'
+export { default as PrivateRoute } from './PrivateRoute'

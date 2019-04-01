@@ -1,16 +1,16 @@
-import React, { Fragment } from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
 
-import { ContextProvider } from "./store";
-import { UserInfo, TodosList } from "./components";
+import { ContextProvider } from './store'
+import Routes from './routes'
 
 const App = () => (
   <ContextProvider>
-    <Fragment>
-      <UserInfo />
-      <TodosList />
-    </Fragment>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   </ContextProvider>
-);
+)
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'))
